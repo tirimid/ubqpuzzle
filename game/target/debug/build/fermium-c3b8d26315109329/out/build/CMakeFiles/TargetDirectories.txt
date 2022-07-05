@@ -1,0 +1,10 @@
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/SDL2main.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/SDL2.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/SDL2-static.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/uninstall.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/edit_cache.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/rebuild_cache.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/list_install_components.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/install.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/install/local.dir
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/install/strip.dir

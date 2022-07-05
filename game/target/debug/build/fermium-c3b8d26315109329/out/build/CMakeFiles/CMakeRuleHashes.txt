@@ -1,0 +1,20 @@
+# Hashes of file build rules.
+a427fe88777a0f0e513b86ad8907d1fb CMakeFiles/uninstall
+ff901cfdfdb12c1b314182b6eefd3453 wayland-generated-protocols/idle-inhibit-unstable-v1-client-protocol.h
+116314c61abe4b769c5848364b75c16e wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c
+1170404dba4195bdfb2ab3986ae552c6 wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h
+8f9aa6cbabfd239d4b3f98d1e49f646b wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c
+bd01913f9d02ad5b30d9e5e95bdd3ca2 wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
+84df3abea3e693cf7ac2a7ee811c5c0e wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+f685b328ead82c44ecabee3406e24f4a wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h
+231d056eddb15da93e19c8e8d57a2880 wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
+744217ad3b81b276b32944cccd61af88 wayland-generated-protocols/text-input-unstable-v3-client-protocol.h
+60f8653584f950897401aceddec22aa7 wayland-generated-protocols/text-input-unstable-v3-protocol.c
+2da23683699c97906eb674941beb9624 wayland-generated-protocols/wayland-client-protocol.h
+00ef73723f464dcf9c671a64497d1ebd wayland-generated-protocols/wayland-protocol.c
+77b08320f820dde3321fc7c2e6c3fada wayland-generated-protocols/xdg-activation-v1-client-protocol.h
+f646d23808f4ae0cd5f276b484a1ba2e wayland-generated-protocols/xdg-activation-v1-protocol.c
+60fd0e2925e19611f3a84af2f27dfcba wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+47572829258906d88da6e74e59acb229 wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+121eef9e00aa6e8d181ebac9e9db8568 wayland-generated-protocols/xdg-shell-client-protocol.h
+ba97136368a8db16681ab05cc05b4b0b wayland-generated-protocols/xdg-shell-protocol.c

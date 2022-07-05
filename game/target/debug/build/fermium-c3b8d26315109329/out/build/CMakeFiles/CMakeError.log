@@ -1,0 +1,1072 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa97c/fast && /usr/bin/make  -f CMakeFiles/cmTC_aa97c.dir/build.make CMakeFiles/cmTC_aa97c.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa97c.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos" -mpreferred-stack-boundary=2 -o CMakeFiles/cmTC_aa97c.dir/src.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c
+cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
+make[1]: *** [CMakeFiles/cmTC_aa97c.dir/build.make:78: CMakeFiles/cmTC_aa97c.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_aa97c/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dddc2/fast && /usr/bin/make  -f CMakeFiles/cmTC_dddc2.dir/build.make CMakeFiles/cmTC_dddc2.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dddc2.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos" -maltivec -o CMakeFiles/cmTC_dddc2.dir/src.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_dddc2.dir/build.make:78: CMakeFiles/cmTC_dddc2.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_dddc2/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8ad35/fast && /usr/bin/make  -f CMakeFiles/cmTC_8ad35.dir/build.make CMakeFiles/cmTC_8ad35.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ad35.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos" -maltivec -o CMakeFiles/cmTC_8ad35.dir/src.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_8ad35.dir/build.make:78: CMakeFiles/cmTC_8ad35.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_8ad35/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3930d/fast && /usr/bin/make  -f CMakeFiles/cmTC_3930d.dir/build.make CMakeFiles/cmTC_3930d.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3930d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_3930d.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   14 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_3930d.dir/build.make:78: CMakeFiles/cmTC_3930d.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_3930d/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_634fb/fast && /usr/bin/make  -f CMakeFiles/cmTC_634fb.dir/build.make CMakeFiles/cmTC_634fb.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_634fb.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_634fb.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+   14 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_634fb.dir/build.make:78: CMakeFiles/cmTC_634fb.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_634fb/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strrev exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8c9c7/fast && /usr/bin/make  -f CMakeFiles/cmTC_8c9c7.dir/build.make CMakeFiles/cmTC_8c9c7.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c9c7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_8c9c7.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strrev’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strrev))[argc];
+      |                   ^~~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_8c9c7.dir/build.make:78: CMakeFiles/cmTC_8c9c7.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_8c9c7/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strrev
+  return ((int*)(&_strrev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strupr exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eda88/fast && /usr/bin/make  -f CMakeFiles/cmTC_eda88.dir/build.make CMakeFiles/cmTC_eda88.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eda88.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_eda88.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strupr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strupr))[argc];
+      |                   ^~~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_eda88.dir/build.make:78: CMakeFiles/cmTC_eda88.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_eda88/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strupr
+  return ((int*)(&_strupr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strlwr exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_adc29/fast && /usr/bin/make  -f CMakeFiles/cmTC_adc29.dir/build.make CMakeFiles/cmTC_adc29.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_adc29.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_adc29.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strlwr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strlwr))[argc];
+      |                   ^~~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_adc29.dir/build.make:78: CMakeFiles/cmTC_adc29.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_adc29/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strlwr
+  return ((int*)(&_strlwr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the itoa exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee9b7/fast && /usr/bin/make  -f CMakeFiles/cmTC_ee9b7.dir/build.make CMakeFiles/cmTC_ee9b7.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee9b7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_ee9b7.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘itoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&itoa))[argc];
+      |                   ^~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_ee9b7.dir/build.make:78: CMakeFiles/cmTC_ee9b7.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_ee9b7/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef itoa
+  return ((int*)(&itoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ltoa exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0ddcc/fast && /usr/bin/make  -f CMakeFiles/cmTC_0ddcc.dir/build.make CMakeFiles/cmTC_0ddcc.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ddcc.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_0ddcc.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ltoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ltoa))[argc];
+      |                   ^~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_0ddcc.dir/build.make:78: CMakeFiles/cmTC_0ddcc.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_0ddcc/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ltoa
+  return ((int*)(&_ltoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _uitoa exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_50b85/fast && /usr/bin/make  -f CMakeFiles/cmTC_50b85.dir/build.make CMakeFiles/cmTC_50b85.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50b85.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_50b85.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_uitoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_uitoa))[argc];
+      |                   ^~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_50b85.dir/build.make:78: CMakeFiles/cmTC_50b85.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_50b85/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _uitoa
+  return ((int*)(&_uitoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ultoa exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7a9d3/fast && /usr/bin/make  -f CMakeFiles/cmTC_7a9d3.dir/build.make CMakeFiles/cmTC_7a9d3.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a9d3.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_7a9d3.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ultoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ultoa))[argc];
+      |                   ^~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_7a9d3.dir/build.make:78: CMakeFiles/cmTC_7a9d3.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_7a9d3/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ultoa
+  return ((int*)(&_ultoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _i64toa exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9d299/fast && /usr/bin/make  -f CMakeFiles/cmTC_9d299.dir/build.make CMakeFiles/cmTC_9d299.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d299.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_9d299.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_i64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_i64toa))[argc];
+      |                   ^~~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_9d299.dir/build.make:78: CMakeFiles/cmTC_9d299.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_9d299/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _i64toa
+  return ((int*)(&_i64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ui64toa exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d39cf/fast && /usr/bin/make  -f CMakeFiles/cmTC_d39cf.dir/build.make CMakeFiles/cmTC_d39cf.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d39cf.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_d39cf.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_ui64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ui64toa))[argc];
+      |                   ^~~~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_d39cf.dir/build.make:78: CMakeFiles/cmTC_d39cf.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_d39cf/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ui64toa
+  return ((int*)(&_ui64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _stricmp exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_906f6/fast && /usr/bin/make  -f CMakeFiles/cmTC_906f6.dir/build.make CMakeFiles/cmTC_906f6.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_906f6.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_906f6.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_stricmp))[argc];
+      |                   ^~~~~~~~
+      |                   strncmp
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_906f6.dir/build.make:78: CMakeFiles/cmTC_906f6.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_906f6/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stricmp
+  return ((int*)(&_stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strnicmp exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c6897/fast && /usr/bin/make  -f CMakeFiles/cmTC_c6897.dir/build.make CMakeFiles/cmTC_c6897.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6897.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_c6897.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_strnicmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_strnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   strncmp
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_c6897.dir/build.make:78: CMakeFiles/cmTC_c6897.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_c6897/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strnicmp
+  return ((int*)(&_strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsdup exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6b22b/fast && /usr/bin/make  -f CMakeFiles/cmTC_6b22b.dir/build.make CMakeFiles/cmTC_6b22b.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b22b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_6b22b.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsdup’ undeclared (first use in this function); did you mean ‘wcsdup’?
+   14 |   return ((int*)(&_wcsdup))[argc];
+      |                   ^~~~~~~
+      |                   wcsdup
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_6b22b.dir/build.make:78: CMakeFiles/cmTC_6b22b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_6b22b/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsdup
+  return ((int*)(&_wcsdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcat exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_58529/fast && /usr/bin/make  -f CMakeFiles/cmTC_58529.dir/build.make CMakeFiles/cmTC_58529.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58529.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_58529.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
+   14 |   return ((int*)(&wcslcat))[argc];
+      |                   ^~~~~~~
+      |                   wcsncat
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_58529.dir/build.make:78: CMakeFiles/cmTC_58529.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_58529/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcat
+  return ((int*)(&wcslcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcpy exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f3af0/fast && /usr/bin/make  -f CMakeFiles/cmTC_f3af0.dir/build.make CMakeFiles/cmTC_f3af0.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f3af0.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_f3af0.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
+   14 |   return ((int*)(&wcslcpy))[argc];
+      |                   ^~~~~~~
+      |                   wcsncpy
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_f3af0.dir/build.make:78: CMakeFiles/cmTC_f3af0.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_f3af0/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcpy
+  return ((int*)(&wcslcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsicmp exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_50be3/fast && /usr/bin/make  -f CMakeFiles/cmTC_50be3.dir/build.make CMakeFiles/cmTC_50be3.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50be3.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_50be3.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsicmp))[argc];
+      |                   ^~~~~~~~
+      |                   wcsncmp
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_50be3.dir/build.make:78: CMakeFiles/cmTC_50be3.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_50be3/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsicmp
+  return ((int*)(&_wcsicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsnicmp exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_269cd/fast && /usr/bin/make  -f CMakeFiles/cmTC_269cd.dir/build.make CMakeFiles/cmTC_269cd.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_269cd.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_269cd.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘_wcsnicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   wcsncmp
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_269cd.dir/build.make:78: CMakeFiles/cmTC_269cd.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_269cd/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsnicmp
+  return ((int*)(&_wcsnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fopen64 exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eaf2e/fast && /usr/bin/make  -f CMakeFiles/cmTC_eaf2e.dir/build.make CMakeFiles/cmTC_eaf2e.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eaf2e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_eaf2e.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fopen64’ undeclared (first use in this function); did you mean ‘fopen’?
+   14 |   return ((int*)(&fopen64))[argc];
+      |                   ^~~~~~~
+      |                   fopen
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_eaf2e.dir/build.make:78: CMakeFiles/cmTC_eaf2e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_eaf2e/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fopen64
+  return ((int*)(&fopen64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fseeko64 exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1d29a/fast && /usr/bin/make  -f CMakeFiles/cmTC_1d29a.dir/build.make CMakeFiles/cmTC_1d29a.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d29a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_1d29a.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: ‘fseeko64’ undeclared (first use in this function); did you mean ‘fseeko’?
+   14 |   return ((int*)(&fseeko64))[argc];
+      |                   ^~~~~~~~
+      |                   fseeko
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_1d29a.dir/build.make:78: CMakeFiles/cmTC_1d29a.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_1d29a/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fseeko64
+  return ((int*)(&fseeko64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_54e4c/fast && /usr/bin/make  -f CMakeFiles/cmTC_54e4c.dir/build.make CMakeFiles/cmTC_54e4c.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54e4c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_54e4c.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: sys/sysctl.h: No such file or directory
+    3 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_54e4c.dir/build.make:78: CMakeFiles/cmTC_54e4c.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_54e4c/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_79fd2/fast && /usr/bin/make  -f CMakeFiles/cmTC_79fd2.dir/build.make CMakeFiles/cmTC_79fd2.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79fd2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_79fd2.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
+    8 |   return ((int*)(&elf_aux_info))[argc];
+      |                   ^~~~~~~~~~~~
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_79fd2.dir/build.make:78: CMakeFiles/cmTC_79fd2.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_79fd2/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d8d70/fast && /usr/bin/make  -f CMakeFiles/cmTC_d8d70.dir/build.make CMakeFiles/cmTC_d8d70.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8d70.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -o CMakeFiles/cmTC_d8d70.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8d70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8d70.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open -rdynamic CMakeFiles/cmTC_d8d70.dir/CheckFunctionExists.c.o -o cmTC_d8d70  -liconv 
+/usr/bin/ld: cannot find -liconv: No such file or directory
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d8d70.dir/build.make:99: cmTC_d8d70] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_d8d70/fast] Error 2
+
+
+
+Determining if the alloca exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c4eb2/fast && /usr/bin/make  -f CMakeFiles/cmTC_c4eb2.dir/build.make CMakeFiles/cmTC_c4eb2.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4eb2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_c4eb2.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘alloca’ undeclared (first use in this function); did you mean ‘valloc’?
+    8 |   return ((int*)(&alloca))[argc];
+      |                   ^~~~~~
+      |                   valloc
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_c4eb2.dir/build.make:78: CMakeFiles/cmTC_c4eb2.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_c4eb2/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1afe9/fast && /usr/bin/make  -f CMakeFiles/cmTC_1afe9.dir/build.make CMakeFiles/cmTC_1afe9.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1afe9.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -o CMakeFiles/cmTC_1afe9.dir/CheckIncludeFile.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_1afe9.dir/build.make:78: CMakeFiles/cmTC_1afe9.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_1afe9/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7b1df/fast && /usr/bin/make  -f CMakeFiles/cmTC_7b1df.dir/build.make CMakeFiles/cmTC_7b1df.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b1df.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_RPI  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib -o CMakeFiles/cmTC_7b1df.dir/src.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_7b1df.dir/build.make:78: CMakeFiles/cmTC_7b1df.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_7b1df/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bbd9f/fast && /usr/bin/make  -f CMakeFiles/cmTC_bbd9f.dir/build.make CMakeFiles/cmTC_bbd9f.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bbd9f.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_OPENGLES_V1  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"   -o CMakeFiles/cmTC_bbd9f.dir/src.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: GLES/gl.h: No such file or directory
+    2 |         #include <GLES/gl.h>
+      |                  ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_bbd9f.dir/build.make:78: CMakeFiles/cmTC_bbd9f.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_bbd9f/fast] Error 2
+
+
+Source file was:
+
+        #include <GLES/gl.h>
+        #include <GLES/glext.h>
+        int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_157b1/fast && /usr/bin/make  -f CMakeFiles/cmTC_157b1.dir/build.make CMakeFiles/cmTC_157b1.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_157b1.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_VIVANTE_VDK  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"   -o CMakeFiles/cmTC_157b1.dir/src.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_157b1.dir/build.make:78: CMakeFiles/cmTC_157b1.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_157b1/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9894a/fast && /usr/bin/make  -f CMakeFiles/cmTC_9894a.dir/build.make CMakeFiles/cmTC_9894a.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9894a.dir/src.c.o
+/usr/bin/cc -DHAVE_VIDEO_VIVANTE_EGL_FB  -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos"   -o CMakeFiles/cmTC_9894a.dir/src.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_9894a.dir/build.make:78: CMakeFiles/cmTC_9894a.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_9894a/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if files pthread_np.h exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a3a25/fast && /usr/bin/make  -f CMakeFiles/cmTC_a3a25.dir/build.make CMakeFiles/cmTC_a3a25.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3a25.dir/HAVE_PTHREAD_NP_H.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos" -I/usr/include/libusb-1.0 "-I/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/hidapi/hidapi"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_a3a25.dir/HAVE_PTHREAD_NP_H.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:2:10: fatal error: pthread_np.h: No such file or directory
+    2 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_a3a25.dir/build.make:78: CMakeFiles/cmTC_a3a25.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_a3a25/fast] Error 2
+
+
+Source:
+/* */
+#include <pthread_np.h>
+
+
+int main(void){return 0;}
+
+Determining if the pthread_setname_np exist failed with the following output:
+Change Dir: /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_036da/fast && /usr/bin/make  -f CMakeFiles/cmTC_036da.dir/build.make CMakeFiles/cmTC_036da.dir/build
+make[1]: Entering directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_036da.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -idirafter "/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/video/khronos" -I/usr/include/libusb-1.0 "-I/home/dmitrii/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16/src/hidapi/hidapi"   -D_REENTRANT -pthread -o CMakeFiles/cmTC_036da.dir/CheckSymbolExists.c.o -c /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘pthread_setname_np’ undeclared (first use in this function); did you mean ‘pthread_setcanceltype’?
+    8 |   return ((int*)(&pthread_setname_np))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~
+      |                   pthread_setcanceltype
+/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_036da.dir/build.make:78: CMakeFiles/cmTC_036da.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_036da/fast] Error 2
+
+
+File /home/dmitrii/Desktop/programming/ubqpuzzle/game/target/debug/build/fermium-c3b8d26315109329/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_setname_np
+  return ((int*)(&pthread_setname_np))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
