@@ -24,7 +24,7 @@ impl Vao {
             gl::BindVertexArray(id);
             vbo.bind();
 
-            // position attribute
+            // position attribute.
             gl::EnableVertexAttribArray(0);
             gl::VertexAttribPointer(
                 0,
@@ -35,7 +35,7 @@ impl Vao {
                 Vertex::pos_offset() as *const GLvoid,
             );
 
-            // color attribute
+            // color attribute.
             gl::EnableVertexAttribArray(1);
             gl::VertexAttribPointer(
                 1,
