@@ -3,7 +3,7 @@ use sdl2::Sdl;
 use std::os::raw::c_void;
 use crate::gfx::program::Program;
 use crate::gfx::vao::Vao;
-use crate::gfx::types;
+use crate::gfx::gmodels;
 
 pub struct Graphics {
     wnd: Window,
@@ -18,18 +18,19 @@ impl Graphics {
         let wnd = vid_subsys.window(wnd_title, wnd_size.0, wnd_size.1).opengl().build().unwrap();
         let gl_ctx = wnd.gl_create_context().unwrap();
         gl::load_with(|s| vid_subsys.gl_get_proc_address(s) as *const c_void);
-        let program = Program::new("assets/shader.vert", "assets/shader.frag").unwrap();
+        let program = Program::new(
+            "assets/shaders/shader.vert",
+            "assets/shaders/shader.frag",
+        ).unwrap();
 
-        let vao = Vao::new(&types::TRIANGLE);
+        let vao = Vao::new(&gmodels::QUAD_VERTS, &gmodels::QUAD_INDS);
 
         Self { wnd, gl_ctx, program, vao }
     }
 
     pub fn draw(&self) {
         self.program.use_program();
-        self.vao.bind();
-        self.vao.draw();
-        Vao::unbind();
+        self.vao.easy_draw();
     }
 
     pub fn present(&self) {

@@ -3,6 +3,8 @@ use crate::gfx::shader::Shader;
 use std::path::Path;
 use std::ffi::CString;
 use std::ptr;
+use std::fmt;
+use std::error::Error;
 
 pub struct Program {
     id: GLuint,
@@ -10,8 +12,23 @@ pub struct Program {
     frag_shader: Shader,
 }
 
+#[derive(Debug)]
+pub enum ProgramError {
+    CreationFailed(String),
+}
+
+impl Error for ProgramError {}
+impl fmt::Display for ProgramError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{:?}", self)
+    }
+}
+
 impl Program {
-    pub fn new<P: AsRef<Path>>(vert_shader_path: P, frag_shader_path: P) -> Result<Self, String> {
+    pub fn new<P: AsRef<Path>>(
+        vert_shader_path: P,
+        frag_shader_path: P,
+    ) -> Result<Self, Box<dyn Error>> {
         let vert_shader = Shader::from_file(vert_shader_path, gl::VERTEX_SHADER)?;
         let frag_shader = Shader::from_file(frag_shader_path, gl::FRAGMENT_SHADER)?;
         let id = unsafe {
@@ -46,7 +63,7 @@ impl Program {
                     cstr
                 }
             };
-            Err(err.to_string_lossy().into_owned())
+            Err(Box::new(ProgramError::CreationFailed(err.to_string_lossy().into_owned())))
         } else {
             Ok(Self { id, vert_shader, frag_shader })
         }

@@ -2,15 +2,18 @@ use gl::types::{GLint, GLuint, GLvoid};
 use crate::gfx::buffer::Buffer;
 use crate::gfx::types::Vertex;
 use std::mem;
+use std::ptr;
 
 pub struct Vao {
     id: GLuint,
     vbo: Buffer,
+    ibo: Buffer,
 }
 
 impl Vao {
-    pub fn new(verts: &Vec<Vertex>) -> Self {
-        let vbo = Buffer::new(verts, gl::STATIC_DRAW);
+    pub fn new(verts: &[Vertex], inds: &[u32]) -> Self {
+        let vbo = Buffer::new(verts, gl::STATIC_DRAW, gl::ARRAY_BUFFER);
+        let ibo = Buffer::new(inds, gl::STATIC_DRAW, gl::ELEMENT_ARRAY_BUFFER);
         let id = unsafe {
             let mut id = 0;
             gl::GenVertexArrays(1, &mut id);
@@ -43,22 +46,28 @@ impl Vao {
                 Vertex::col_offset() as *const GLvoid,
             );
             
-            Buffer::unbind();
+            Buffer::unbind(gl::ARRAY_BUFFER);
             Self::unbind();
         }
 
-        Self { id, vbo }
+        Self { id, vbo, ibo }
     }
 
     pub fn bind(&self) {
         unsafe {
             gl::BindVertexArray(self.id);
+            self.ibo.bind();
         }
     }
 
     pub fn draw(&self) {
         unsafe {
-            gl::DrawArrays(gl::TRIANGLES, 0, self.vbo.len() as GLint);
+            gl::DrawElements(
+                gl::TRIANGLES,
+                self.ibo.len() as GLint,
+                gl::UNSIGNED_INT,
+                ptr::null(),
+            );
         }
     }
 
@@ -66,6 +75,15 @@ impl Vao {
         unsafe {
             gl::BindVertexArray(0);
         }
+    }
+
+    // handles binding and unbinding buffers.
+    // use this function wherever possible to avoid possible problems.
+    pub fn easy_draw(&self) {
+        self.bind();
+        self.draw();
+        Self::unbind();
+        Buffer::unbind(self.ibo.buf_type());
     }
 }
 

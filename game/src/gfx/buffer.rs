@@ -4,10 +4,11 @@ use std::mem;
 pub struct Buffer {
     id: GLuint,
     len: usize,
+    buf_type: GLenum,
 }
 
 impl Buffer {
-    pub fn new<T>(data: &Vec<T>, usage: GLenum) -> Self {
+    pub fn new<T>(data: &[T], usage: GLenum, buf_type: GLenum) -> Self {
         let id = unsafe {
             let mut id = 0;
             gl::GenBuffers(1, &mut id);
@@ -15,33 +16,37 @@ impl Buffer {
         };
 
         unsafe {
-            gl::BindBuffer(gl::ARRAY_BUFFER, id);
+            gl::BindBuffer(buf_type, id);
             gl::BufferData(
-                gl::ARRAY_BUFFER,
+                buf_type,
                 (data.len() * mem::size_of::<T>()) as GLsizeiptr,
                 data.as_ptr() as *const GLvoid,
                 usage,
             );
-            Self::unbind();
+            Self::unbind(buf_type);
         }
 
-        Self { id, len: data.len() }
+        Self { id, len: data.len(), buf_type }
     }
 
     pub fn bind(&self) {
         unsafe {
-            gl::BindBuffer(gl::ARRAY_BUFFER, self.id);
+            gl::BindBuffer(self.buf_type, self.id);
         }
     }
 
-    pub fn unbind() {
+    pub fn unbind(buf_type: GLenum) {
         unsafe {
-            gl::BindBuffer(gl::ARRAY_BUFFER, 0);
+            gl::BindBuffer(buf_type, 0);
         }
     }
 
     pub fn len(&self) -> usize {
         self.len
+    }
+
+    pub fn buf_type(&self) -> GLenum {
+        self.buf_type
     }
 }
 

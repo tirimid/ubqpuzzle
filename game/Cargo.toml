@@ -8,6 +8,5 @@ authors = ["Dmitrii Fedorin"]
 
 [dependencies]
 gl = "0.14.0"
-lazy_static = "1.4.0"
 memoffset = "0.6.5"
 sdl2 = "0.35.2"

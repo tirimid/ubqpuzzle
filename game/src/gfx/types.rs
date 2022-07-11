@@ -1,8 +1,20 @@
 use memoffset::offset_of;
-use lazy_static::lazy_static;
 
 pub struct Position(f32, f32, f32);
+
+impl Position {
+    pub const fn new(x: f32, y: f32, z: f32) -> Self {
+        Self(x, y, z)
+    }
+}
+
 pub struct Color(f32, f32, f32);
+
+impl Color {
+    pub const fn new(r: f32, g: f32, b: f32) -> Self {
+        Self(r, g, b)
+    }
+}
 
 pub struct Vertex {
     pos: Position,
@@ -10,6 +22,10 @@ pub struct Vertex {
 }
 
 impl Vertex {
+    pub const fn new(pos: Position, col: Color) -> Self {
+        Self { pos, col }
+    }
+    
     pub fn pos_offset() -> usize {
         offset_of!(Self, pos)
     }
@@ -17,13 +33,4 @@ impl Vertex {
     pub fn col_offset() -> usize {
         offset_of!(Self, col)
     }
-}
-
-// vectors of vertices for debugging purposes
-lazy_static! {
-    pub static ref TRIANGLE: Vec<Vertex> = vec![
-        Vertex { pos: Position(0.0, 0.5, 0.0), col: Color(1.0, 0.0, 0.0) },
-        Vertex { pos: Position(0.5, -0.5, 0.0), col: Color(1.0, 0.0, 0.0) },
-        Vertex { pos: Position(-0.5, -0.5, 0.0), col: Color(1.0, 0.0, 0.0) },
-    ];
 }
