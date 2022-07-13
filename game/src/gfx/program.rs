@@ -1,10 +1,11 @@
-use gl::types::{GLchar, GLuint};
+use gl::types::{GLchar, GLuint, GLint, GLfloat};
 use crate::gfx::shader::Shader;
 use std::path::Path;
 use std::ffi::CString;
 use std::ptr;
 use std::fmt;
 use std::error::Error;
+use nalgebra_glm::Mat4;
 
 pub struct Program {
     id: GLuint,
@@ -74,11 +75,35 @@ impl Program {
             gl::UseProgram(self.id);
         }
     }
+
+    pub fn id(&self) -> GLuint {
+        self.id
+    }
+
+    // `name` must be null terminated.
+    pub fn uniform_mat4_location(&self, name: &str) -> Option<GLint> {
+        let loc = unsafe {
+            gl::GetUniformLocation(self.id, name.as_ptr() as *const GLchar)
+        };
+        if loc == -1 {
+            None
+        } else {
+            Some(loc)
+        }
+    }
+
+    pub fn uniform_mat4_set(&self, loc: GLint, mat: &Mat4) {
+        unsafe {
+            gl::UniformMatrix4fv(loc, 1, gl::FALSE, mat.as_slice().as_ptr() as *const GLfloat);
+        }
+    }
 }
 
 impl Drop for Program {
     fn drop(&mut self) {
         unsafe {
+            gl::DetachShader(self.id, self.vert_shader.id());
+            gl::DetachShader(self.id, self.frag_shader.id());
             gl::DeleteProgram(self.id);
         }
     }

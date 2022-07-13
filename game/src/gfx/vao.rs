@@ -46,21 +46,18 @@ impl Vao {
                 Vertex::col_offset() as *const GLvoid,
             );
             
-            Buffer::unbind(gl::ARRAY_BUFFER);
-            Self::unbind();
+            Buffer::unbind(vbo.buf_type());
+            gl::BindVertexArray(0);
         }
 
         Self { id, vbo, ibo }
     }
 
-    pub fn bind(&self) {
+    pub fn draw(&self) {
         unsafe {
             gl::BindVertexArray(self.id);
-            self.ibo.bind();
         }
-    }
-
-    pub fn draw(&self) {
+        self.ibo.bind();
         unsafe {
             gl::DrawElements(
                 gl::TRIANGLES,
@@ -68,21 +65,8 @@ impl Vao {
                 gl::UNSIGNED_INT,
                 ptr::null(),
             );
-        }
-    }
-
-    pub fn unbind() {
-        unsafe {
             gl::BindVertexArray(0);
         }
-    }
-
-    // handles binding and unbinding buffers.
-    // use this function wherever possible to avoid possible problems.
-    pub fn easy_draw(&self) {
-        self.bind();
-        self.draw();
-        Self::unbind();
         Buffer::unbind(self.ibo.buf_type());
     }
 }

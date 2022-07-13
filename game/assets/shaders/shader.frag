@@ -1,11 +1,11 @@
 #version 330 core
 
-in VS_OUTPUT {
-    vec3 Color;
-} IN;
+in vs_output {
+    vec3 color;
+} fg_in;
 
-out vec4 Color;
+out vec4 color;
 
 void main() {
-    Color = vec4(IN.Color, 1.0f);
+    color = vec4(fg_in.color, 1.0f);
 }

@@ -2,14 +2,12 @@ use sdl2::video::{GLContext, Window};
 use sdl2::Sdl;
 use std::os::raw::c_void;
 use crate::gfx::program::Program;
-use crate::gfx::vao::Vao;
-use crate::gfx::gmodels;
+use crate::gfx::camera::Camera;
 
 pub struct Graphics {
     wnd: Window,
     gl_ctx: GLContext,
     program: Program,
-    vao: Vao,
 }
 
 impl Graphics {
@@ -23,14 +21,31 @@ impl Graphics {
             "assets/shaders/shader.frag",
         ).unwrap();
 
-        let vao = Vao::new(&gmodels::QUAD_VERTS, &gmodels::QUAD_INDS);
+        unsafe {
+            gl::Enable(gl::DEPTH_TEST);
+        }
 
-        Self { wnd, gl_ctx, program, vao }
+        Self { wnd, gl_ctx, program }
     }
 
-    pub fn draw(&self) {
+    pub fn prepare(&self, cam: &Camera) {
         self.program.use_program();
-        self.vao.easy_draw();
+        unsafe {
+            gl::Clear(gl::COLOR_BUFFER_BIT | gl::DEPTH_BUFFER_BIT);
+        }
+        
+        self.program.uniform_mat4_set(
+            self.program.uniform_mat4_location("view_mat\0").unwrap(),
+            &cam.view_mat(),
+        );
+        self.program.uniform_mat4_set(
+            self.program.uniform_mat4_location("proj_mat\0").unwrap(),
+            &cam.proj_mat(),
+        );
+    }
+
+    pub fn program(&self) -> &Program {
+        &self.program
     }
 
     pub fn present(&self) {

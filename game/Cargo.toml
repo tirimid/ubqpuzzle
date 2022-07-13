@@ -8,5 +8,9 @@ authors = ["Dmitrii Fedorin"]
 
 [dependencies]
 gl = "0.14.0"
+lazy_static = "1.4.0"
 memoffset = "0.6.5"
+nalgebra = "0.31.0"
+nalgebra-glm = "0.17.0"
+num-traits = "0.2.15"
 sdl2 = "0.35.2"
