@@ -1,6 +1,6 @@
 use gl::types::{GLint, GLuint, GLvoid};
 use crate::gfx::buffer::Buffer;
-use crate::gfx::types::Vertex;
+use crate::types::vertex::Vertex;
 use std::mem;
 use std::ptr;
 

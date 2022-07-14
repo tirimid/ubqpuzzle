@@ -1,6 +1,8 @@
 use nalgebra_glm::{Vec3, Mat4};
 use nalgebra::geometry::UnitQuaternion;
 
+// using `UnitQuaternion` instead of `Quaternion` as it has a nicer api for needed conversions.
+// also, it is more accurate to use unit quaternions for rotation.
 pub type UnitQuat = UnitQuaternion<f32>;
 pub struct Transform {
     pub pos: Vec3,
@@ -17,31 +19,8 @@ pub fn vec3_to_translation_mat(v: &Vec3) -> Mat4 {
     )
 }
 
-// cannot use nalgebra method in `UnitQuaternion` as resulting matrix is of size 3x3.
-// for opengl purposes, this matrix must be of size 4x4.
 pub fn quat_to_rotation_mat(q: &UnitQuat) -> Mat4 {
-    let (w, x, y, z) = {
-        let coords = q.quaternion().coords;
-        (coords.w, coords.x, coords.y, coords.z)
-    };
-    Mat4::new(
-        2.0 * (w.powi(2) + x.powi(2)) - 1.0,
-        2.0 * (x * y - w * z),
-        2.0 * (x * z + w * y),
-        0.0,
-        2.0 * (x * y + w * z),
-        2.0 * (w.powi(2) + y.powi(2)) - 1.0,
-        2.0 * (y * z - w * z),
-        0.0,
-        2.0 * (x * z - w * y),
-        2.0 * (y * z + w * x),
-        2.0 * (w.powi(2) + z.powi(2)) - 1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-    )
+    nalgebra_glm::mat3_to_mat4(&q.to_rotation_matrix().matrix())
 }
 
 pub fn vec3_to_scale_mat(v: &Vec3) -> Mat4 {

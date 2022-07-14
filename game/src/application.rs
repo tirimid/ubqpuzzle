@@ -25,7 +25,7 @@ impl Application {
         let mut model0 = Model::new(Vao::new(&**gmodels::TRIANGLE_VERTS, &gmodels::TRIANGLE_INDS));
         model0.trans.pos += Vec3::new(1.2, 0.7, 1.2);
         let mut model1 = Model::new(Vao::new(&**gmodels::CUBE_VERTS, &gmodels::CUBE_INDS));
-        model1.trans.pos += Vec3::new(0.0, 0.0, -1.2);
+        model1.trans.pos += Vec3::new(-1.2, 0.0, -1.2);
         
         Self { sdl, gfx, cam, model0, model1 }
     }
@@ -41,8 +41,8 @@ impl Application {
             }
 
             self.cam.trans.rot *= UnitQuat::from_euler_angles(0.0, 0.007, 0.0);
-            self.model0.trans.rot *= UnitQuat::from_euler_angles(0.01, 0.0, 0.01);
-            self.model1.trans.rot *= UnitQuat::from_euler_angles(0.0, 0.01, 0.0);
+            self.model0.trans.rot *= UnitQuat::from_euler_angles(0.0, 0.01, 0.0);
+            self.model1.trans.rot *= UnitQuat::from_euler_angles(0.0, 0.01, 0.01);
 
             self.gfx.prepare(&self.cam);
             self.model0.draw(&self.gfx.program());

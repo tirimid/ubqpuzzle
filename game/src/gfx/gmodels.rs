@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-use crate::gfx::types::Vertex;
+use crate::types::vertex::Vertex;
 use lazy_static::lazy_static;
 use nalgebra_glm::Vec3;
 
