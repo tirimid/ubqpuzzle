@@ -35,10 +35,7 @@ impl Model {
             }
             verts
         };
-        Ok(Self {
-            trans: Transform::identity(),
-            vao: Vao::new(verts.as_slice(), obj.indices.as_slice()),
-        })
+        Ok(Self::new(Vao::new(verts.as_slice(), obj.indices.as_slice())))
     }
     
     pub fn draw(&self, prog: &Program) {
