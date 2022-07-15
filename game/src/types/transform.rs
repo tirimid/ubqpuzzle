@@ -51,4 +51,13 @@ impl Transform {
     pub fn forward(&self) -> Vec3 {
         self.rot.to_rotation_matrix() * Vec3::new(0.0, 0.0, 1.0)
     }
+
+    pub fn move_pos(&mut self, x: f32, y: f32, z: f32) {
+        self.pos += Vec3::new(x, y, z);
+    }
+
+    // input is expected as euler angles.
+    pub fn rotate(&mut self, pitch: f32, yaw: f32, roll: f32) {
+        self.rot *= UnitQuat::from_euler_angles(pitch, yaw, roll);
+    }
 }

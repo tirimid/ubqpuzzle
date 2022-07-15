@@ -6,7 +6,7 @@ use crate::gfx::camera::Camera;
 
 pub struct Graphics {
     wnd: Window,
-    gl_ctx: GLContext,
+    _gl_ctx: GLContext,
     program: Program,
 }
 
@@ -14,7 +14,7 @@ impl Graphics {
     pub fn new(sdl: &Sdl, wnd_title: &str, wnd_size: (u32, u32)) -> Self {
         let vid_subsys = sdl.video().unwrap();
         let wnd = vid_subsys.window(wnd_title, wnd_size.0, wnd_size.1).opengl().build().unwrap();
-        let gl_ctx = wnd.gl_create_context().unwrap();
+        let _gl_ctx = wnd.gl_create_context().unwrap();
         gl::load_with(|s| vid_subsys.gl_get_proc_address(s) as *const c_void);
         let program = Program::new(
             "assets/shaders/shader.vert",
@@ -25,7 +25,7 @@ impl Graphics {
             gl::Enable(gl::DEPTH_TEST);
         }
 
-        Self { wnd, gl_ctx, program }
+        Self { wnd, _gl_ctx, program }
     }
 
     pub fn prepare(&self, cam: &Camera) {

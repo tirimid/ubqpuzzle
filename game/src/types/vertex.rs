@@ -4,6 +4,7 @@ use nalgebra_glm::Vec3;
 pub struct Vertex {
     pub pos: Vec3,
     pub col: Vec3,
+    pub norm: Vec3,
 }
 
 impl Vertex {
@@ -13,5 +14,9 @@ impl Vertex {
 
     pub fn col_offset() -> usize {
         offset_of!(Self, col)
+    }
+
+    pub fn norm_offset() -> usize {
+        offset_of!(Self, norm)
     }
 }

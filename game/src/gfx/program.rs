@@ -76,10 +76,6 @@ impl Program {
         }
     }
 
-    pub fn id(&self) -> GLuint {
-        self.id
-    }
-
     // `name` must be null terminated.
     pub fn uniform_mat4_location(&self, name: &str) -> Option<GLint> {
         let loc = unsafe {

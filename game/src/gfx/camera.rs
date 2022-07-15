@@ -1,5 +1,5 @@
 use crate::types::transform::Transform;
-use nalgebra_glm::{Mat4, Vec3};
+use nalgebra_glm::Mat4;
 
 pub struct Camera {
     pub trans: Transform,

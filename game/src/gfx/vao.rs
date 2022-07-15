@@ -1,4 +1,4 @@
-use gl::types::{GLint, GLuint, GLvoid};
+use gl::types::{GLint, GLuint, GLvoid, GLenum};
 use crate::gfx::buffer::Buffer;
 use crate::types::vertex::Vertex;
 use std::mem;
@@ -6,8 +6,22 @@ use std::ptr;
 
 pub struct Vao {
     id: GLuint,
-    vbo: Buffer,
+    _vbo: Buffer,
     ibo: Buffer,
+}
+
+fn set_vert_attr(attr_ind: GLuint, size: GLint, attr_type: GLenum, offset: usize) {
+    unsafe {
+        gl::EnableVertexAttribArray(attr_ind);
+        gl::VertexAttribPointer(
+            attr_ind,
+            size,
+            attr_type,
+            gl::FALSE,
+            mem::size_of::<Vertex>() as GLint,
+            offset as *const GLvoid,
+        )
+    }
 }
 
 impl Vao {
@@ -23,34 +37,16 @@ impl Vao {
         unsafe {
             gl::BindVertexArray(id);
             vbo.bind();
-
-            // position attribute.
-            gl::EnableVertexAttribArray(0);
-            gl::VertexAttribPointer(
-                0,
-                3,
-                gl::FLOAT,
-                gl::FALSE,
-                mem::size_of::<Vertex>() as GLint,
-                Vertex::pos_offset() as *const GLvoid,
-            );
-
-            // color attribute.
-            gl::EnableVertexAttribArray(1);
-            gl::VertexAttribPointer(
-                1,
-                3,
-                gl::FLOAT,
-                gl::FALSE,
-                mem::size_of::<Vertex>() as GLint,
-                Vertex::col_offset() as *const GLvoid,
-            );
-            
+        }
+        set_vert_attr(0, 3, gl::FLOAT, Vertex::pos_offset());
+        set_vert_attr(1, 3, gl::FLOAT, Vertex::col_offset());
+        set_vert_attr(2, 3, gl::FLOAT, Vertex::norm_offset());
+        unsafe {
             Buffer::unbind(vbo.buf_type());
             gl::BindVertexArray(0);
         }
 
-        Self { id, vbo, ibo }
+        Self { id, _vbo: vbo, ibo }
     }
 
     pub fn draw(&self) {

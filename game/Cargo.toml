@@ -1,6 +1,6 @@
 [package]
 name = "game"
-version = "0.1.0"
+version = "0.0.0" # i really, really cannot be bothered to update this
 edition = "2021"
 authors = ["Dmitrii Fedorin"]
 
@@ -13,4 +13,5 @@ memoffset = "0.6.5"
 nalgebra = "0.31.0"
 nalgebra-glm = "0.17.0"
 num-traits = "0.2.15"
+obj-rs = "0.7.0"
 sdl2 = "0.35.2"
